@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- Swiper -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!--  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <body>
+    <header class="TopBar con-min-width">
+      <img src="./images/logo.png" alt="" />
+      <ul>
+        <li>
+          <a href="#">amiibo</a>
+        </li>
+        <li>
+          <a href="#">제품</a>
+          <ul class="Product">
+            <li>
+              <a href="#">Nintendo Switch 패밀리</a>
+              <nav><img src="./images/Product1.png" alt="" /></nav>
+            </li>
+            <li>
+              <a href="#">게임 & 워치 젤다의 전설</a>
+              <nav><img src="./images/Product2.png" alt="" /></nav>
+            </li>
+            <li>
+              <a href="#">닌텐도 사운드 클록 Alarmo</a>
+              <nav><img src="./images/Product3.png" alt="" /></nav>
+            </li>
+            <li>
+              <a href="#">Pokémon GO Plus+</a>
+              <nav><img src="./images/Product4.png" alt="" /></nav>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">소프트웨어</a>
+          <ul class="SoftWare">
+            <li>
+              <a href="#">Nintendo Switch 소프트웨어</a>
+              <nav><img src="./images/Software1.png" alt="" /></nav>
+            </li>
+            <li>
+              <a href="#">Mobile App</a>
+              <nav><img src="./images/Software2.png" alt="" /></nav>
+            </li>
+            <li>
+              <a href="#">Nintendo Switch Online</a>
+              <nav><img src="./images/Software3.png" alt="" /></nav>
+            </li>
+            <li>
+              <a href="#">Parental Controls</a>
+              <nav><img src="./images/Software4.png" alt="" /></nav>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">뉴스</a></li>
+        <li>
+          <a href="#">캐릭터</a>
+          <ul class="Character">
+            <li>
+              <a href="#">마리오</a>
+              <nav><img src="./images/img-mario.png" alt="" /></nav>
+            </li>
+            <li>
+              <a href="#">젤다의 전설</a>
+              <nav><img src="./images/img-zelda.png" alt="" /></nav>
+            </li>
+            <li>
+              <a href="#">별의 커비</a>
+              <nav><img src="./images/img-kirby.png" alt="" /></nav>
+            </li>
+            <li>
+              <a href="#">스플래툰</a>
+              <nav><img src="./images/img-splatoon.png" alt="" /></nav>
+            </li>
+            <li>
+              <a href="#">피크민</a>
+              <nav><img src="./images/img-min.png" alt="" /></nav>
+            </li>
+            <li>
+              <a href="#">뿅·쓱싹·첨벙·싫어</a>
+              <nav><img src="./images/img-song.png" alt="" /></nav>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">고객지원</a>
+          <ul class="CS">
+            <li>
+              <a href="#">제품 지원</a>
+              <a href="#">Nintendo Switch</a>
+              <a href="#">닌텐도 사운드 클록 Alarmo</a>
+              <a href="#">게임 & 워치 젤다의 전설</a>
+              <a href="#">닌텐도 3DS</a>
+              <a href="#">기타</a>
+            </li>
+            <li>
+              <a href="#">문의사항</a>
+              <a href="#">FAQ</a>
+              <a href="#">온라인수리접수</a>
+              <a href="#">온라인 고객 상담</a>
+              <a href="#">네트워크 장애 발생 상황</a>
+            </li>
+            <li>
+              <a href="#">이용안내</a>
+              <a href="#">Nintendo Switch Online</a>
+              <a href="#">My Nintendo Store</a>
+              <a href="#">공지사항</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div>
+        <div>
+          <img src="./images/store.png" alt="" />
+        </div>
+        <img src="./images/search.png" alt="" />
+      </div>
+    </header>
+    <section class="Main con-min-width">
+      <div class="swiper mySwiper" data-aos="flip-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <h1>제노블레이드 크로니클스 크로스 디피니티브 에디션</h1>
+            <img src="./images/Main.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <h1>Nintendo Switch 2</h1>
+            <img src="./images/Main_2.webp" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <h1>마리오 카트 월드</h1>
+            <img src="./images/Main_3.webp" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <h1>동키콩 바난자</h1>
+            <img src="./images/Main_4.webp" alt="" />
+          </div>
+        </div>
+        <div class="swiper-button swiper-button-next">
+          <img src="./images/btn_Next.png" alt="" />
+        </div>
+        <div class="swiper-button swiper-button-prev">
+          <img src="./images/btn_Previous.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="BG"></section>
+    <section class="News con-min-width">
+      <nav>
+        <h2>뉴스</h2>
+        <img src="./images/btn_Right_more.png" alt="" />
+      </nav>
+      <div class="NewsBox">
+        <div class="swiper Banner" data-aos="fade-up" data-aos-duration="1000">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide1">
+              <img src="./images/news_Banner.png" alt="" />
+              <span>
+                고디바 meets 동물의 숲,<br />고디바 meets 피크민 컬렉션<br />제품의
+                온라인 사전 예약이<br />시작되었습니다.
+              </span>
+            </div>
+            <div class="swiper-slide swiper-slide2">
+              <img src="./images/어린이날.png" alt="" />
+            </div>
+            <div class="swiper-slide swiper-slide3">
+              <img src="./images/마리오.png" alt="" />
+            </div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+          </div>
+        </div>
+        <div class="con">
+          <div class="news-data news-data1" data-aos="fade-up" data-aos-duration="1000">
+            <span class="title">
+              “드디어 만났네요“『Fitness Boxing 3: Your Personal Trainer』에
+              새로운 트레이너 「히로」가 무료 업데이트로 추가되었습니다. 새로운
+              BGM을 추가할 수 있는 유료 DLC도 배포 개시.</span
+            >
+            <img src="./images/news_1.png" alt="" />
+            <div class="text">
+              <p>2024.10.17</p>
+              <p>뉴스</p>
+            </div>
+          </div>
+          <div class="news-data news-data2" data-aos="fade-up" data-aos-duration="1000">
+            <span class="title"
+              >「고디바 meets 동물의 숲」, 「고디바 meets 피크민」 컬렉션 제품의
+              온라인 사전 예약이 시작되었습니다.</span
+            >
+            <img src="./images/news_2.png" alt="" />
+            <div class="text">
+              <p>2024.10.17</p>
+              <p>뉴스</p>
+            </div>
+          </div>
+          <div class="news-data news-data3" data-aos="fade-up" data-aos-duration="1000">
+            <span class="title"
+              >『제노블레이드 크로니클스 크로스 디피니티브 에디션』의 공식 소개
+              페이지가 공개되었습니다.</span
+            >
+            <img src="./images/news_3.png" alt="" />
+            <div class="text">
+              <p>2024.10.17</p>
+              <p>뉴스</p>
+            </div>
+          </div>
+          <div class="news-data news-data4" data-aos="fade-up" data-aos-duration="1500">
+            <span class="title"
+              >「피크민 팝업 스토어 in 더현대 서울」 3월 27일(목) 오픈! 사전
+              예약도 시작되었습니다.</span
+            >
+            <img src="./images/news_4.png" alt="" />
+            <div class="text">
+              <p>2024.10.17</p>
+              <p>뉴스</p>
+            </div>
+          </div>
+          <div class="news-data news-data5" data-aos="fade-up" data-aos-duration="1500">
+            <span class="title"
+              >「Pokémon LEGENDS Z-A(포켓몬 레전즈 제트에이)」 2025년 가을 발매
+              결정!</span
+            >
+            <img src="./images/news_5.png" alt="" />
+            <div class="text">
+              <p>2024.10.17</p>
+              <p>뉴스</p>
+            </div>
+          </div>
+          <div class="news-data news-data6" data-aos="fade-up" data-aos-duration="1500">
+            <span class="title">「Pokémon Champions」를 개발 중!</span>
+            <img src="./images/news_6.png" alt="" />
+            <div class="text">
+              <p>2024.10.17</p>
+              <p>뉴스</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Software con-min-width">
+      <div class="wrapper">
+        <div class="SoftwareBox" data-aos="fade-up">
+          <nav>
+            <h2>소프트웨어</h2>
+            <img src="./images/btn_Right_more.png" alt="" />
+          </nav>
+          <div class="MainImg">
+            <img src="./images/Software_01.png" alt="" />
+          </div>
+          <div class="con">
+            <div class="Software-data Software-data1" data-aos="fade-up" data-aos-duration="1000">
+              <div class="title">
+                <span>젤다의 전설 지혜의 투영</span>
+                <div class="tag">
+                  <img src="./images/img_all.png" alt="" />
+                  <img src="./images/img_lang.png" alt="" />
+                </div>
+              </div>
+              <div class="version">
+                <p>Nintendo Switch</p>
+                <p>패키지 버전 / 다운로드 버전</p>
+              </div>
+              <img src="./images/Software_02.png" alt="" />
+              <div class="text">
+                <p>2024.9.27</p>
+                <p>한국닌텐도</p>
+              </div>
+            </div>
+            <div class="Software-data Software-data2" data-aos="fade-up" data-aos-duration="1000">
+              <div class="title">
+                <span>모여봐요 동물의 숲</span>
+                <div class="tag">
+                  <img src="./images/img_all.png" alt="" />
+                  <img src="./images/img_lang.png" alt="" />
+                </div>
+              </div>
+              <div class="version">
+                <p>Nintendo Switch</p>
+                <p>패키지 버전 / 다운로드 버전</p>
+              </div>
+              <img src="./images/Software_03.png" alt="" />
+              <div class="text">
+                <p>2020.03.20</p>
+                <p>한국닌텐도</p>
+              </div>
+            </div>
+            <div class="Software-data Software-data3" data-aos="fade-up" data-aos-duration="1000">
+              <div class="title">
+                <span>동키콩 리턴즈 HD</span>
+                <div class="tag">
+                  <img src="./images/img_all.png" alt="" />
+                  <img src="./images/img_lang.png" alt="" />
+                </div>
+              </div>
+              <div class="version">
+                <p>Nintendo Switch</p>
+                <p>패키지 버전 / 다운로드 버전</p>
+              </div>
+              <img src="./images/Software_04.png" alt="" />
+              <div class="text">
+                <p>2025.1.16</p>
+                <p>한국닌텐도</p>
+              </div>
+            </div>
+            <div class="Software-data Software-data4" data-aos="fade-up" data-aos-duration="1000">
+              <div class="title">
+                <span>슈퍼 마리오브라더스 원더</span>
+                <div class="tag">
+                  <img src="./images/img_all.png" alt="" />
+                  <img src="./images/img_lang.png" alt="" />
+                </div>
+              </div>
+              <div class="version">
+                <p>Nintendo Switch</p>
+                <p>패키지 버전 / 다운로드 버전</p>
+              </div>
+              <img src="./images/Software_05.png" alt="" />
+              <div class="text">
+                <p>2023.10.20</p>
+                <p>한국닌텐도</p>
+              </div>
+            </div>
+            <div class="Software-data Software-data5" data-aos="fade-up" data-aos-duration="1000">
+              <div class="title">
+                <span>마리오 카트 8 디럭스</span>
+                <div class="tag">
+                  <img src="./images/img_all.png" alt="" />
+                  <img src="./images/img_lang.png" alt="" />
+                </div>
+              </div>
+              <div class="version">
+                <p>Nintendo Switch</p>
+                <p>패키지 버전 / 다운로드 버전</p>
+              </div>
+              <img src="./images/Software_06.png" alt="" />
+              <div class="text">
+                <p>2017.12.15 (PK) / 2018.4.3 (DL)</p>
+                <p>한국닌텐도</p>
+              </div>
+            </div>
+            <div class="Software-data Software-data6" data-aos="fade-up" data-aos-duration="1000">
+              <div class="title">
+                <span>젤다의 전설 티어스 오브 더 킹덤</span>
+                <div class="tag">
+                  <img src="./images/img_all.png" alt="" />
+                  <img src="./images/img_lang.png" alt="" />
+                </div>
+              </div>
+              <div class="version">
+                <p>Nintendo Switch</p>
+                <p>패키지 버전 / 다운로드 버전</p>
+              </div>
+              <img src="./images/Software_07.png" alt="" />
+              <div class="text">
+                <p>2023.5.12</p>
+                <p>뉴스</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ScheduleBox" data-aos="fade-up">
+          <nav>
+            <h2>소프트웨어 발매 스케줄</h2>
+            <img src="./images/btn_Right_more.png" alt="" />
+          </nav>
+          <div class="MainImg">
+            <img src="./images/Software_Plann_01.png" alt="" />
+          </div>
+          <div class="con">
+            <div class="Schedule-data Schedule-data1" data-aos="fade-up" data-aos-duration="1000">
+              <div class="title">
+                <span>유미아의 아틀리에 ~추억의 연금술사와 창환의 땅~</span>
+              </div>
+              <div class="version">
+                <p>Nintendo Switch</p>
+                <p>패키지 버전 / 다운로드 버전</p>
+              </div>
+              <img src="./images/Software_Plann_02.png" alt="" />
+              <div class="text">
+                <p>2025.3.20</p>
+                <p>한국닌텐도</p>
+              </div>
+            </div>
+            <div class="Schedule-data Schedule-data2" data-aos="fade-up" data-aos-duration="1000">
+              <div class="title">
+                <span>Matchmaker Agency</span>
+              </div>
+              <div class="version">
+                <p>Nintendo Switch</p>
+                <p>패키지 버전 / 다운로드 버전</p>
+              </div>
+              <img src="./images/Software_Plann_03.png" alt="" />
+              <div class="text">
+                <p>2025.3.20</p>
+                <p>한국닌텐도</p>
+              </div>
+            </div>
+            <div class="Schedule-data Schedule-data3" data-aos="fade-up" data-aos-duration="1000">
+              <div class="title">
+                <span>도전! 강아지 찾기</span>
+              </div>
+              <div class="version">
+                <p>Nintendo Switch</p>
+                <p>패키지 버전 / 다운로드 버전</p>
+              </div>
+              <img src="./images/Software_Plann_04.png" alt="" />
+              <div class="text">
+                <p>2025.3.20</p>
+                <p>한국닌텐도</p>
+              </div>
+            </div>
+            <div class="Schedule-data Schedule-data4" data-aos="fade-up" data-aos-duration="1000">
+              <div class="title">
+                <span>Bubble Ghost Remake</span>
+              </div>
+              <div class="version">
+                <p>Nintendo Switch</p>
+                <p>패키지 버전 / 다운로드 버전</p>
+              </div>
+              <img src="./images/Software_Plann_05.png" alt="" />
+              <div class="text">
+                <p>2025.3.20</p>
+                <p>한국닌텐도</p>
+              </div>
+            </div>
+            <div class="Schedule-data Schedule-data5" data-aos="fade-up" data-aos-duration="1000">
+              <div class="title">
+                <span>별의 도약 이야기/span>
+              </div>
+              <div class="version">
+                <p>Nintendo Switch</p>
+                <p>패키지 버전 / 다운로드 버전</p>
+              </div>
+              <img src="./images/Software_Plann_06.png" alt="" />
+              <div class="text">
+                <p>2025.3.20</p>
+                <p>한국닌텐도</p>
+              </div>
+            </div>
+            <div class="Schedule-data Schedule-data6" data-aos="fade-up" data-aos-duration="1000">
+              <div class="title">
+                <span>PICROSS S Doraemon & F Characters edition/span>
+              </div>
+              <div class="version">
+                <p>Nintendo Switch</p>
+                <p>패키지 버전 / 다운로드 버전</p>
+              </div>
+              <img src="./images/Software_Plann_07.png" alt="" />
+              <div class="text">
+                <p>2025.3.20</p>
+                <p>한국닌텐도</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Download">
+      <div class="DownloadBox">
+        <h1>다운로드 버전으로<br>쉽고 간편하게<br>즐겨보세요</h1>
+        <nav data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="3000">
+          <div>
+            <span>다운로드 구입하기</span>
+            <img src="./images/btn_Right.png" alt="">
+          </div>
+          <div>
+            <span>Nintendo Switch<br>
+              / 닌텐도 3DS<br> 
+              닌텐도 선불 카드 안내</span>
+            <img src="./images/btn_Right.png" alt="">
+          </div>
+          <div>
+            <span>Nintendo Switch 
+              닌텐도 선불 </span>
+            <img src="./images/btn_Right.png" alt="">
+          </div>
+        </nav>
+      </div>
+    </section>
+    <section class="BGIMG">
+      <img src="./images/BG-shape.png" alt="">
+      <img src="./images/img-head.png" alt="">
+      <img src="./images/img-circle.png" alt="">
+    </section>
+    <section class="Notice">
+      <div class="NoticeBox">
+        <h1>공지사항</h1>
+        <ul data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
+          <li><img src="./images/num-1.png" alt=""><span>마이 닌텐도 골드 포인트 부여 종료에 관한 안내</span></li>
+          <li><img src="./images/num-2.png" alt=""><span>닌텐도 온라인 스토어 이용약관 및 개인정보처리방침 변경 고지</span></li>
+          <li><img src="./images/num-3.png" alt=""><span>게임물 등급표시에 대하여</span></li>
+          <li><img src="./images/num-4.png" alt=""><span>청소년이용불가 등급표시 변경 안내</span></li>
+        </ul>
+      </div>
+    </section>
+    <section class="Footer">
+      <div class="sec1">
+        <img src="./images/logo.png" alt="">
+        <span>이용약관 | 개인정보처리방침</span>
+        <span>상호명: 한국닌텐도주식회사 | 대표자명: 미우라 타카히로</span>
+        <div class="sns">
+          <img src="./images/sns-1.png" alt="">
+          <img src="./images/sns-2.png" alt="">
+          <img src="./images/sns-3.png" alt="">
+          <img src="./images/sns-4.png" alt=""></div>
+          <p>ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.</p>
+      </div>
+      <div class="sec2">
+        <div>
+          <img src="./images/logo-black.png" alt="">
+          <img src="./images/logo-amiibo.png" alt="">
+        </div>
+        <ul>
+          <li>
+            <span>한국닌텐도</span>
+            <p>회사개요</p>
+            <p>찾아오시는 길</p>
+          </li>
+          <li>
+            <span>제품</span>
+            <p>Nintendo Switch 패밀리</p>
+            <p>게임 & 워치 젤다의 전설</p>
+            <p>닌텐도 사운드 클록 Alarmo</p>
+            <p>Pokémon GO Plus+</p>
+          </li>
+          <li>
+            <span>소프트웨어</span>
+            <p>Nintendo Switch 소프트웨어</p>
+            <p>Mobile App</p>
+            <p>Nintendo Switch Online</p>
+            <p>Parental Controls</p>
+          </li>
+          <li>
+            <span>뉴스</span>
+          </li>
+          <li>
+            <span>캐릭터</span>
+            <p>마리오</p>
+            <p>젤다의 전설</p>
+            <p>별의 커비</p>
+            <p>스플래툰</p>
+            <p>피크민</p>
+            <p>뿅·쓱싹·첨벙·싫어</p>
+          </li>
+          <li>
+            <span>제품 지원</span>
+            <p>Nintendo Switch</p>
+            <p>닌텐도 사운드 클록 Alarmo</p>
+            <p>게임 & 워치 젤다의 전설</p>
+            <p>닌텐도 3DS</p>
+            <p>기타</p>
+          </li>
+          <li>
+            <span>문의사항</span>
+            <p>FAQ</p>
+            <p>온라인수리접수</p>
+            <p>온라인 고객 상담</p>
+            <p>네트워크 장애 발생 상황</p>
+          </li>
+          <li>
+            <span>이용안내</span>
+            <p>Nintendo Switch Online</p>
+            <p>My Nintendo Store</p>
+            <p>공지사항</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="Footer-CS">
+      <div>
+        <span>고객지원 문의전화</span>
+        <span>평일 오전 9시 30분~오후 5시 30분</span>
+        <span>1670-9900</span>
+        <span>※토/일/공휴일/회사 정기휴일 및 특별휴일 제외</span>
+      </div>
+    </section>
+  </body>
+  <script>
+    //AOS
+    AOS.init();
+
+    // TopBar
+    // 1차 메뉴에서 호버 시 2차 메뉴 보이기
+    document.querySelectorAll(".TopBar > ul > li").forEach(function (menuItem) {
+      menuItem.addEventListener("mouseenter", function () {
+        // 해당 li 안의 2차 메뉴 ul을 표시
+        const subMenu = menuItem.querySelector("ul");
+        if (subMenu) {
+          subMenu.classList.add("active");
+        }
+      });
+
+      menuItem.addEventListener("mouseleave", function () {
+        // 해당 li에서 벗어날 때 2차 메뉴 ul을 숨기기
+        const subMenu = menuItem.querySelector("ul");
+        if (subMenu) {
+          subMenu.classList.remove("active");
+        }
+      });
+    });
+
+    // Swiper
+    const swiper = new Swiper(".Banner", {
+      slidesPerView: 1,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+      on: {
+        slideChangeTransitionStart: () => {
+          resetProgressBar();
+        },
+      },
+    });
+
+    const progressBarFill = document.querySelector(".progress-bar-fill");
+
+    function resetProgressBar() {
+      progressBarFill.style.transition = "none";
+      progressBarFill.style.width = "0%";
+      // 트리거 강제 재계산을 위해 강제로 리플로우
+      void progressBarFill.offsetWidth;
+
+      progressBarFill.style.transition = "width 3s linear";
+      progressBarFill.style.width = "100%";
+    }
+
+    // 초기에도 진행바 시작
+    resetProgressBar();
+  </script>
+</html>
