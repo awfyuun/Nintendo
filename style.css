@@ -606,6 +606,7 @@ body {
 .Software .ScheduleBox {
   width: 100%;
   height: auto;
+  z-index: 80;
 }
 
 .Software nav {
@@ -730,6 +731,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-right: 340px;
+  z-index: 80;
 }
 
 .DownloadBox h1 {
@@ -782,6 +784,7 @@ body {
   position: absolute;
   top: 260%;
   left: 0%;
+  z-index: 0;
 }
 
 .BGIMG > img:nth-child(2) {
@@ -829,6 +832,7 @@ body {
   width: 1223px;
   margin-top: 160px;
   margin-right: 340px;
+  z-index: 80;
 }
 
 .Notice h1 {
