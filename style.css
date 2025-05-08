@@ -31,13 +31,15 @@ body {
 .TopBar {
   width: 100%;
   height: 80px;
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: white;
   position: fixed;
   z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  transition: all 0.2s;
 }
 
 .TopBar > img {
@@ -85,12 +87,14 @@ body {
 .TopBar > div > div > img {
   width: 106px;
   height: 13px;
+  cursor: pointer;
 }
 
 .TopBar > div > img:last-child {
   width: 24px;
   height: 24px;
   margin-left: 24px;
+  cursor: pointer;
 }
 
 /* 2차 메뉴 */
@@ -164,7 +168,6 @@ body {
   color: #e60012;
 }
 
-
 .TopBar > ul > li > .SoftWare > li {
   width: 195px;
 }
@@ -236,6 +239,72 @@ body {
 
 /* TopBar 끝*/
 
+/* Search 시작 */
+.SearchActive {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  z-index: 3;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  border: 1px solid red;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: all 0.2s;
+}
+
+.SearchActive.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.SearchActive div {
+  margin: 0 auto;
+  width: 93%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.SearchActive img {
+  width: 24px;
+  height: 24px;
+}
+
+.TopBar.hidden {
+  display: none; /* TopBar 숨기기 */
+}
+
+.search-input {
+  width: 100%;
+  border: transparent;
+  border-radius: 4px;
+  outline: none;
+  font-size: 18px;
+  color: #a8a8a8;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #000;
+  caret-color: #000;
+  animation: blink-caret 0.8s step-end infinite;
+}
+
+/* 커서 깜박임 애니메이션 */
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+/* Search 끝*/
+
 /* Main 시작*/
 .Main {
   z-index: 1;
@@ -294,7 +363,7 @@ body {
 
 .BG {
   width: 100%;
-  height: 360vh;
+  height: 340vh;
   background-color: white;
   position: absolute;
   top: 50%;
@@ -302,6 +371,85 @@ body {
   z-index: -1;
 }
 /* Main 끝*/
+
+/* Btn 시작*/
+.Btn {
+  top: 55%;
+  right: 2%;
+  position: fixed;
+  z-index: 999;
+}
+
+.Btn > div {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.Btn .TopBtn {
+  margin-top: 10px;
+}
+
+.Btn .QuickMenu,
+.Btn .TopBtn {
+  width: 40px;
+  height: 40px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.Btn ul {
+  background-color: #000;
+  width: 240px;
+  height: auto;
+  padding: 21px 0;
+  visibility: hidden;
+  position: absolute;
+  top: -350%;
+  right: 5%;
+}
+
+.QuickMenu.active {
+  visibility: hidden;
+}
+
+.Btn ul.active,
+.QuickMenu {
+  visibility: visible;
+}
+
+.Btn ul li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.Btn ul li:empty {
+  border-bottom: 1px solid #383838;
+}
+
+.Btn ul li a {
+  color: white;
+  font-size: 12px;
+}
+
+.Btn ul > li:first-child {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.Btn ul > li > img {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.Btn ul li:hover > a {
+  color: #e60012;
+}
+/* Btn 끝*/
 
 /*News 시작*/
 .News {

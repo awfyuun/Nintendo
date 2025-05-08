@@ -25,7 +25,7 @@
 
   <body>
     <header class="TopBar con-min-width">
-      <img src="./images/logo.png" alt="" />
+      <img class="search-active" src="./images/logo.png" alt="" />
       <ul>
         <li>
           <a href="#">amiibo</a>
@@ -133,9 +133,15 @@
         <div>
           <img src="./images/store.png" alt="" />
         </div>
-        <img src="./images/search.png" alt="" />
+        <img class="search-toggle" src="./images/search.png" alt="" />
       </div>
     </header>
+    <section class="SearchActive">
+      <div>
+        <input type="text" placeholder="검색어를 입력하세요" class="search-input" />
+        <img class="cancel-btn" src="./images/cancel.png" alt="">
+      </div>
+    </section>
     <section class="Main con-min-width">
       <div class="swiper mySwiper" data-aos="flip-up">
         <div class="swiper-wrapper">
@@ -165,6 +171,28 @@
       </div>
     </section>
     <section class="BG"></section>
+    <section class="Btn">
+      <div>
+        <div>
+          <img class="QuickMenu" src="./images/btn_QuickMenu.png" alt="">
+          <ul>
+            <li><img src="./images/clear.png" alt=""></li>
+            <li><a href="">Nintendo Switch OLED</a></li>
+            <li><a href="">Nintendo Switch</a></li>
+            <li><a href="">Nintendo Switch Lite</a></li>
+            <li></li>
+            <li><a href="">제품별 기능·특징 비교</a></li>
+            <li><a href="">주변기기</a></li>
+            <li></li>
+            <li><a href="">체험판을 즐길 수 있는 소프트웨어</a></li>
+            <li><a href="">소프트웨어 발매 스케줄</a></li>
+            <li></li>
+            <li><a href="">닌텐도 선불번호 구입</a></li>
+          </ul>
+        </div>
+        <img class="TopBtn" src="./images/btn_Top.png" alt="">
+      </div>
+    </section>
     <section class="News con-min-width">
       <nav>
         <h2>뉴스</h2>
@@ -657,5 +685,72 @@
 
     // 초기에도 진행바 시작
     resetProgressBar();
+
+    //QuickMenu
+    document.addEventListener("DOMContentLoaded", function () {
+    const quickMenuBtn = document.querySelector(".QuickMenu");
+    const menu = document.querySelector(".Btn ul");
+    const clearBtn = menu.querySelector("li img"); // 첫 번째 <li>의 <img>
+
+    // 메뉴 열기 (QuickMenu 클릭 시)
+    quickMenuBtn.addEventListener("click", function (e) {
+      if (!menu.classList.contains("active")) {
+        // 메뉴 열기
+        menu.classList.add("active");
+        // 퀵메뉴 숨기기
+        quickMenuBtn.classList.add("active");
+      }
+      e.stopPropagation(); // 이벤트 버블링 방지
+    });
+
+    // 메뉴 닫기 (clear 버튼 클릭 시)
+    clearBtn.addEventListener("click", function () {
+      // 메뉴 닫기
+      menu.classList.remove("active");
+      // 퀵메뉴 보이기
+      quickMenuBtn.classList.remove("active");
+    });
+
+    // 메뉴 외부 클릭 시 닫기
+    document.addEventListener("click", function (e) {
+      if (!menu.contains(e.target) && !quickMenuBtn.contains(e.target)) {
+        menu.classList.remove("active");
+        quickMenuBtn.classList.remove("active");
+      }
+    });
+  });
+
+  //TopBtn
+  document.addEventListener("DOMContentLoaded", function () {
+    const topBtn = document.querySelector(".TopBtn");
+
+    // 탑 버튼 클릭 시 페이지 상단으로 스크롤 이동
+    topBtn.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth" // 부드러운 스크롤 애니메이션
+      });
+    });
+  });
+
+  //검색 
+  document.addEventListener("DOMContentLoaded", function () {
+    const searchToggle = document.querySelector(".search-toggle");
+    const searchPanel = document.querySelector(".SearchActive");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    const topBar = document.querySelector(".TopBar");
+
+    // 검색 버튼 클릭 시 SearchActive 표시, TopBar 숨기기
+    searchToggle.addEventListener("click", function () {
+      searchPanel.classList.add("active");
+      topBar.classList.add("hidden");  // TopBar 숨기기
+    });
+
+    // 닫기 버튼 클릭 시 SearchActive 숨기기, TopBar 보이기
+    cancelBtn.addEventListener("click", function () {
+      searchPanel.classList.remove("active");
+      topBar.classList.remove("hidden");  // TopBar 보이기
+    });
+  });
   </script>
 </html>
