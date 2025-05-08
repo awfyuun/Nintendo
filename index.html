@@ -653,22 +653,22 @@
       });
     });
 
-    // Swiper
-    const swiper = new Swiper(".Banner", {
-      slidesPerView: 1,
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
+    // Banner Swiper
+    const bannerSwiper = new Swiper(".Banner", {
+    slidesPerView: 1,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+    on: {
+      slideChangeTransitionStart: () => {
+        resetProgressBar();
       },
-      scrollbar: {
-        el: ".swiper-scrollbar",
-      },
-      on: {
-        slideChangeTransitionStart: () => {
-          resetProgressBar();
-        },
-      },
+    },
     });
 
     const progressBarFill = document.querySelector(".progress-bar-fill");
@@ -751,6 +751,23 @@
       searchPanel.classList.remove("active");
       topBar.classList.remove("hidden");  // TopBar 보이기
     });
+  });
+
+  //
+  function setFullHeight() {
+    const bg = document.querySelector('.BG');
+    bg.style.height = `${window.innerHeight}px`; // 실제 브라우저 높이로 설정
+  }
+
+  window.addEventListener('resize', setFullHeight); // 창 크기 변경 시 실행
+  setFullHeight(); // 페이지 로드 시 실행
+
+//Main Swiper
+  const mySwiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   });
   </script>
 </html>
