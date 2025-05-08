@@ -862,7 +862,6 @@ body {
 .Footer {
   width: 100%;
   padding-top: 497px;
-  z-index: 20;
   display: flex;
   justify-content: space-between;
   padding-bottom: 40px;
