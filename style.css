@@ -867,6 +867,7 @@ body {
   justify-content: space-between;
   padding-bottom: 40px;
   background-color: white;
+  z-index: 5;
 }
 
 .Footer .sec1 {
@@ -952,6 +953,7 @@ body {
   height: 60px;
   display: flex;
   align-items: center;
+  z-index: 5;
 }
 
 .Footer-CS div {
