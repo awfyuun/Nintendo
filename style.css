@@ -113,6 +113,8 @@ body {
   justify-content: center;
   padding-top: 61px;
   padding-bottom: 98px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+  rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 .TopBar > ul > li > ul a {
@@ -506,6 +508,16 @@ body {
   position: absolute;
   color: #e60012;
   top: 77%;
+  left: 8%;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.News .Banner .swiper-slide3 > span {
+  position: absolute;
+  color: #fff;
+  top: 85%;
   left: 8%;
   font-weight: 700;
   font-size: 24px;
