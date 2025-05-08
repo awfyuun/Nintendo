@@ -473,6 +473,7 @@ body {
 .News nav img {
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 
 .News .NewsBox {
@@ -623,6 +624,7 @@ body {
 .Software nav img {
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 
 .Software .MainImg img {
@@ -884,6 +886,7 @@ body {
   width: 270px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 128px;
 }
 
 .Footer .sec1 .sns img {
@@ -930,7 +933,6 @@ body {
 
 .Footer .sec2 ul li p:hover {
   color: #e60012;
-  font-weight: 500;
 }
 
 .Footer .sec3 {
